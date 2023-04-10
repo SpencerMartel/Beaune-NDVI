@@ -1,1 +1,1 @@
-web: voila --port=$PORT --no-browser --strip_sources=False --enable_nbextensions=True --MappingKernelManager.cull_interval=60 --MappingKernelManager.cull_idle_timeout=120 notebooks/notebook.ipynb
+web: voila --port=$PORT --no-browser --Voila.ip=0.0.0.0 --strip_sources=False --enable_nbextensions=True --MappingKernelManager.cull_interval=60 --MappingKernelManager.cull_idle_timeout=120 --NotebookClient.iopub_timeout=30 notebooks/notebook.ipynb
